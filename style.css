@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+}
+h1{
+    font-family: var(--heading-font);
+    margin: 0.5rem 0;
+    color: var(--heading-color);
+}
+p{
+    font-family: var(--paragraph-font-400);
+    margin: 0.5rem 0;
+    color: var(--paragraph-color);
+}
+:root{
+    --heading-color: hsl(192, 100%, 9%);
+    --paragraph-color: hsl(208, 11%, 55%);
+    --primary-color: hsl(322, 100%, 66%);
+    --heading-font:'Poppins', sans-serif;
+    --page-padding: 2rem 8rem;
+    --paragraph-font-400:'Open Sans', sans-serif;
+    --para-font-700:'Open Sans', sans-serif;
+
+}
+
+/* Header  */
+
+#header{
+    min-width: 100%;
+   min-height: 100%;
+    background: url(images/bg-hero-desktop.svg);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--page-padding);
+    position: relative;
+    z-index: 4;
+   
+}
+.nav div{
+    padding: 2rem;
+}
+.nav-btn{
+    margin-right: 2rem;
+    border: none;
+    width: 12rem;
+    height: 3.5rem;
+   border-radius: 2rem;
+   box-shadow: 0 0 1rem hsl(212, 8%, 46%);
+   color: var(--heading-color);
+   font-family: var(--heading-font);
+}
+.nav-btn:hover{
+color: rgb(138, 138, 138);
+cursor: pointer;
+background-color: rgb(255, 255, 255);
+}
+.content{
+    display: flex;
+    padding: var(--page-padding);
+    
+}
+.content div{
+    min-height: max-content;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 2rem ;
+    
+    
+}
+.content img{
+    width: 90%;
+}
+
+
+.primary-button{
+    width: max-content;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: var(--primary-color);
+    font-family: var(--para-font-700);
+    font-weight: 700;
+    padding: 1.4rem 4.5rem;
+    color: rgb(249, 246, 246);
+    margin: 15px 0;
+}
+.primary-button:hover{
+    background-color: hsl(323, 100%, 74%); 
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Mid  */
+
+
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--page-padding);
+    margin: 6rem 0;
+    position: relative;
+    z-index: 4;
+}
+.box{
+    box-shadow: 0 0 0.8rem rgb(205, 205, 205);
+    margin: 2rem 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 'a b';
+    align-items: center;
+    column-gap: 3rem;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+.g1{
+grid-area: a;
+padding-left: 7rem;
+}
+
+.g2{
+   grid-area:b ; 
+}
+
+.g3{
+    grid-area: b;
+    padding-left: 7rem; 
+}
+
+
+.g4{
+    grid-area:a;
+}
+.g4 img{
+float: left;
+}
+
+.g5{
+    grid-area:a ;  
+    padding-left: 7rem; 
+}
+
+.g6{
+    grid-area: b;
+}
+.box img{
+    width: 90%;
+    float: right;
+}
+
+.download-txt{
+position: relative;
+z-index: 10;
+display: flex;
+justify-content: center;
+background: transparent;
+text-align: center;
+top: 7rem;
+padding: var(--page-padding);
+
+}
+.download-txt div{
+    box-shadow: 0 0 0.9rem gray;
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 5rem 7rem;
+}
+
+
+.backward{
+    border: 2px solid hsl(192, 100%, 9%);
+    background-color: hsl(192, 100%, 9%);
+    position: relative;
+    z-index: 5;
+    min-height: 8rem;
+
+}
+
+/* Footer  */
+
+.footer{
+    background-color: hsl(192, 100%, 9%);
+    padding: var(--page-padding);
+}
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.col{
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    margin: 2rem 4rem 0 0;
+    
+}
+.col p{
+display: inline-block;
+margin:  1rem;
+font-size: 1.5rem;
+max-width: 24rem;
+}
+.col img{
+    padding: 1rem;
+}
+.col svg{
+    margin: 1rem 0;
+}
+.col a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--paragraph-font-400);
+    line-height: 3rem;
+    font-size: 1.4\rem;
+   
+  
+}
+.col a:hover{
+    text-decoration: underline;
+    padding-left: 0.8rem;
+   
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+}
+.col-2{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.col-2 span{
+    font-size: 1.2rem;
+    font-family: var(--paragraph-font-400);
+}
+.col-2 i{
+    margin-top: 8rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.col-2 i:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+  font-size: 3rem;
+}
+
+
+/* media queries  */
+
+@media (max-width: 800px){
+    html{
+        font-size: 55%;
+    }
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.content{
+    flex-direction: column;
+    margin: 0;
+}
+#header{
+    background: url(images/bg-hero-mobile.svg);
+    width: 90vw;
+    
+}
+
+.nav{
+    padding: 0px;
+}
+.nav svg{
+    width: 90%;
+}
+.nav input{
+    width: 10rem;
+    
+}
+.content{
+    padding: 0px ;
+    margin-top: 3rem;
+
+}
+.content div{
+    align-items: center;
+}
+.content img{
+    width: 100%;
+    
+}
+.download-txt div{
+    padding: 2rem;
+    margin: 1rem;
+}
+
+footer p{
+    text-align: left;;
+}
+
+}
+
+
+@media (max-width: 640px){
+    html{
+        font-size: 40%;
+    }
+    :root{
+        --page-padding:4rem 5rem;
+    }
+.nav input{
+    height: 3.9rem;
+    padding: 0 0.1rem;
+    margin: 0;
+    width: 14rem;
+}
+.nav svg{
+    width: 16rem;
+}
+.box{
+    grid-template-areas: 'a a' 'b b' ;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.g1,.g5{
+    grid-area: b;
+    
+    padding: 0;
+}
+.g3{
+    padding: 0;
+}
+.g2,.g6{
+    grid-area: a;
+}
+.box div{
+    margin: 2rem;
+}
+
+.row{
+    flex-direction: column;
+}
+
+.footer-box{
+    margin-top: 1.1rem ;
+}
+.footer-box img{
+    padding-left: 0;
+}
+.col svg{
+    max-width: 50%;
+    height: 40%;
+}
+.col a{
+    margin: 0;
+    padding: 0;
+    width: max-content;
+}
+.col{
+    margin: 0;
+}
+}
+
